@@ -1,0 +1,16 @@
+МОДУЛИ
+<script src="app.js" type="module"></script>
+
+--------Export Syntax----
+
+export function updateScoreboard(newResult) { … }
+export const homeTeam = 'Tigers';
+export { addResult, homeTeam as host };
+
+
+--------Import Syntax ------
+import {addResult, homeTeam} from './scoreboard.js';
+addResult(); 
+
+import * as scoreboard from './scoreboard.js';
+scoreboard.updateScore(); 
